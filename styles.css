@@ -1,0 +1,13 @@
+#container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 800px;
+
+}
+
+div {
+    background-color: pink;
+    height: 50px;
+    width: 50px;
+
+}
