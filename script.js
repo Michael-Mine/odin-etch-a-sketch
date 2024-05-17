@@ -1,13 +1,18 @@
 const container = document.querySelector("#container");
 
-let gridsLength = 16;
+function newSketch(gridsLength = 16, gridSize = "62.5px") {
 
-for (let i = 0; i < gridsLength; i ++) {
     for (let i = 0; i < gridsLength; i ++) {
-        let div = document.createElement("div");
-        container.appendChild(div);
+        for (let i = 0; i < gridsLength; i ++) {
+            let div = document.createElement("div");
+            div.style.height = gridSize
+            div.style.width = gridSize
+            container.appendChild(div);
+        }
     }
 }
+
+newSketch();
 
 const divs = document.querySelectorAll("div");
 
@@ -24,6 +29,6 @@ button1.textContent = "Click for new Etch-A-Sketch";
 button.appendChild(button1);
 
 button1.addEventListener("click", () => {
-    gridsLength = prompt("How many squares per side (maximum 100)?");
+    gridsLength = prompt("How many squares per side (maximum 100?");
 })
 
