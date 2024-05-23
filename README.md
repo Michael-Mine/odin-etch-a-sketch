@@ -1,6 +1,6 @@
 # odin-etch-a-sketch
 
-Javascript project from The Odin Project - Fountains.
+Javascript project from The Odin Project - Foundations.
 
 Building from scratch, a browser version of an Etch-A-Sketch.
 
